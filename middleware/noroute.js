@@ -1,6 +1,5 @@
 export default function ({ redirect, route }) {
-    console.log('noroute==', route)
-  
+    //console.log('noroute==', route)
     if (!route.name) {
   
       //dirty hack for redirect from root doc with multiple trailing slashes to single trailing slash 
@@ -9,7 +8,7 @@ export default function ({ redirect, route }) {
       
       if (moreThanTwoTrailingSlashes) {
         console.log('root file name redirect goes here:', route.path)
-        redirect(301, "/")
+        redirect(302, "/")
         return
       }
       
