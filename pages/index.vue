@@ -1,24 +1,27 @@
 <template>
-  <div>
-    <h1>Pretty ULRs feature is ON</h1>
+  <div class="container">
     <div>
-       <a href='/subfolder/'>/subfolder/</a> - 200, produces page content, OK - 200, produces page content, OK
-    </div>
-      <div>
-      <a href='/subfolder'>/subfolder</a> - 301 to /subfolder/, OK
-    </div>
-    <div>
-      <a href='/subfolder///'>/subfolder///</a> - 301 to /subfolder/, OK
-    </div>
-
-    <div>
-       <a href='/'>/</a> - 200, produces page content, OK
-    </div>
-    <div>
-      <a href='///'>///</a> - 200, produces page content, not OK - expected 301 to /
-    </div>
-    <div>
-      $curl -IL https://admiring-curie-585c96.netlify.app/
+      <h1 class="title">
+        nuxtredirect
+      </h1>
+      <div class="links">
+        <a
+          href="https://nuxtjs.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button--green"
+        >
+          Documentation
+        </a>
+        <a
+          href="https://github.com/nuxt/nuxt.js"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button--grey"
+        >
+          GitHub
+        </a>
+      </div>
     </div>
   </div>
 </template>
