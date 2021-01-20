@@ -1,4 +1,6 @@
 export default {
+  target: 'static',
+  
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'nuxtredirect',
@@ -19,7 +21,7 @@ export default {
     trailingSlash : true,
     middleware: 'noroute'
   },
-  
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
