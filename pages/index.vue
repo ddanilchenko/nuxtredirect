@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1>Pretty ULRs feature is off</h1>
     <div>
        <a href='/subfolder/'>/subfolder/</a> - 200, produces page content, OK - 200, produces page content, OK
     </div>
