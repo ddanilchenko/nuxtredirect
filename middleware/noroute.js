@@ -1,5 +1,5 @@
 export default function ({ redirect, route }) {
     if (!route.name) {
-      redirect(404, "/not-found/")
+      redirect(302, "/not-found/")
     }
-  }
+}
